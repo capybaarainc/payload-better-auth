@@ -17,7 +17,6 @@ interface BetterAuthPluginOptions {
 
 export const betterAuthPlugin = (options?: BetterAuthPluginOptions): Plugin => {
   return (config: Config): Config => {
-    console.log("betterAuthPlugin is modifying config...");
     // Inject better-auth collections
     const collections = config.collections || [];
 
